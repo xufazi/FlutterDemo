@@ -28,5 +28,4 @@ ReduxState getReduce(ReduxState state, action) {
     user: UserReducer(state.user, action),
     book: BookReducer(state.book, action)
   );
-
 }
