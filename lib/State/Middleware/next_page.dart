@@ -34,15 +34,24 @@ class NextPageState extends State<NextPage> {
                     SizedBox(height: 50,),
                     FlatButton(
                         onPressed: (){
+                          print("用户点击了  添加用户  按钮");
                           store.dispatch(AddUserAction(store.state.user));
                         },
                         child: Text("添加用户")
                     ),
                     FlatButton(
                         onPressed: (){
+                          print("用户点击了  更新用户  按钮");
                           store.dispatch(UpdateUserAction(store.state.user));
                         },
                         child: Text("更新用户")
+                    ),
+                    FlatButton(
+                        onPressed: (){
+                          print("用户点击了  删除用户  按钮");
+                          store.dispatch(DeleteUserAction(store.state.user));
+                        },
+                        child: Text("删除用户")
                     ),
                   ],
                 )

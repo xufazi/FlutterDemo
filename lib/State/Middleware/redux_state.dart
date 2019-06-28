@@ -28,5 +28,6 @@ ReduxState getReduce(ReduxState state, action) {
 
 /// 定义了一个中间件
 final List<Middleware<ReduxState>> middleware = [
-  UserInfoMiddleware(),
+  UserInfoMiddleware1(),
+  UserInfoMiddleware2(),
 ];
