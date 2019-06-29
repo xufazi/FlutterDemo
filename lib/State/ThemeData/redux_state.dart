@@ -15,7 +15,7 @@ class ReduxState {
   
 }
 
-/// 定义action，将action放到User类里去定义
+/// 定义action，将action放到theme_redux类里去定义
 
 /// 定义reducer
 ReduxState getReduce(ReduxState state, action) {

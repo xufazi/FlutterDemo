@@ -33,6 +33,7 @@ class ReduxDemo3 extends StatelessWidget {
         child: StoreBuilder<ReduxState>(builder: (BuildContext context, Store<ReduxState> store){
           return MaterialApp(
             title: 'ReduxDemo3',
+            /// 这边的皮肤数据主要从store中去取
             theme: store.state.themeData,
             home: FirstPage(),
           );

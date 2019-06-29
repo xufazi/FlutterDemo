@@ -46,6 +46,7 @@ class FirstPageState extends State<FirstPage> {
     return list;
   }
 
+  /// 改变皮肤颜色的同时也修改文本的颜色
   Widget _buildBtns(Store store, int index) {
     return FlatButton(
         onPressed: (){
@@ -56,12 +57,14 @@ class FirstPageState extends State<FirstPage> {
         child: Text(
          getThemeListNames()[index],
           style: TextStyle(
+            /// 文本的颜色从store中获取
             color: store.state.themeData.primaryColor
           ),
         )
     );
   }
 
+  /// 颜色值数组
   static List<Color> getThemeListColors() {
     return [
       Colors.black,
@@ -72,6 +75,7 @@ class FirstPageState extends State<FirstPage> {
     ];
   }
 
+  /// 颜色名数组
   static List<String> getThemeListNames() {
     return [
       "black",
