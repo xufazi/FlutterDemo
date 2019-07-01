@@ -4,7 +4,7 @@
  */
 
 import "package:flutter/material.dart";
-import 'package:flutter_demo/State/Language_NoRedux/more_localization.dart';
+import 'package:flutter_demo/State/FZLocalizations/more_localization.dart';
 
 class FirstPage extends StatefulWidget {
 
@@ -32,11 +32,14 @@ class FirstPageState extends State<FirstPage> {
               Text("Localizations 当前语言：${Localizations.localeOf(context)}"),
               SizedBox(height: 50,),
               SizedBox(height: 50,),
-              TextField(
-                decoration: InputDecoration(
-                    hintText: "这是文本框，测试双击"
+              Padding(
+                padding: EdgeInsets.all(10),
+                child: TextField(
+                  decoration: InputDecoration(
+                      hintText: "这是文本框，测试双击"
+                  ),
                 ),
-              ),
+              )
             ],
           )
       ),
