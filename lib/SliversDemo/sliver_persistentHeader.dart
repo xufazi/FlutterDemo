@@ -142,7 +142,8 @@ class SliverPersistentHeaderPageState extends State<SliverPersistentHeaderPage> 
                       image: AssetImage(asset),
                       fit: BoxFit.fill,
                     ),
-                    color: Colors.white),
+                    color: Colors.white
+                ),
                 child: ClipRect(
                   child: BackdropFilter(
                     filter: ImageFilter.blur(sigmaX: 5.0, sigmaY: 5.0),
